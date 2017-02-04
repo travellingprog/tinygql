@@ -1,0 +1,16 @@
+{
+  "name": "tinygql",
+  "version": "0.0.1",
+  "description": "A tiny GraphQL browser client with zero dependencies",
+  "main": "index.js",
+  "files": ["umd/"],
+  "keywords": ["graphql", "client", "microlibrary", "umd"],
+  "homepage": "https://github.com/travellingprog/tinygql",
+  "bugs": "https://github.com/travellingprog/tinygql/issues",
+  "repository": {
+    "url": "https://github.com/travellingprog/tinygql",
+    "type": "git",
+  },
+  "author": "Erick Cardenas Mendez <e.cardenasmendez@gmail.com>",
+  "license": "MIT"
+}
