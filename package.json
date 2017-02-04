@@ -1,11 +1,11 @@
 {
   "name": "tinygql",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A tiny GraphQL browser client with zero dependencies",
   "main": "index.js",
   "browser": "./umd/tinygql.js",
   "files": [
-    "umd/"
+    "umd/*.*"
   ],
   "keywords": [
     "graphql",
