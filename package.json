@@ -2,6 +2,10 @@
   "name": "tinygql",
   "version": "0.0.4",
   "description": "A tiny GraphQL browser client with zero dependencies",
+  "scripts": {
+    "start": "npm test",
+    "test": "node run/test"
+  },
   "main": "index.js",
   "browser": "./umd/tinygql.js",
   "files": [
@@ -21,5 +25,14 @@
     "type": "git"
   },
   "author": "Erick Cardenas Mendez <e.cardenasmendez@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.4.1",
+    "karma-commonjs": "^1.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.2"
+  }
 }
