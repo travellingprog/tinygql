@@ -5,24 +5,31 @@ const PORT = 9876;
 const config = {
   basepath: '..',
   files: [
-    'index.js',
     'tests/**/*.js',
   ],
   port: PORT,
-  frameworks: ['jasmine', 'commonjs'],
+  frameworks: [
+    'browserify',
+    'jasmine',
+  ],
   browsers: ['PhantomJS'],
+  client: {
+    captureConsole: true,
+  },
   preprocessors: {
-    '**/*.js': ['commonjs'],
-    'tests/**/*.js': ['coverage'],
+    'tests/**/*.js': ['browserify', 'coverage'],
   },
   reporters: [
     'progress',
     'coverage',
   ],
-  // singleRun: true,
-  // autoWatch: false,
+  singleRun: true,
+  autoWatch: false,
+  browserify: {
+    debug: true,
+  },
   coverageReporter: {
-    type: 'in-memory',
+    type: 'text',
   },
   phantomjsLauncher: {
     exitOnResourceError: true,

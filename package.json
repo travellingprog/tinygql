@@ -26,13 +26,14 @@
   },
   "author": "Erick Cardenas Mendez <e.cardenasmendez@gmail.com>",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
+    "browserify": "^14.0.0",
     "jasmine-core": "^2.5.2",
     "karma": "^1.4.1",
-    "karma-commonjs": "^1.0.0",
+    "karma-browserify": "^5.1.1",
     "karma-coverage": "^1.1.1",
     "karma-jasmine": "^1.1.0",
-    "karma-phantomjs-launcher": "^1.0.2"
+    "karma-phantomjs-launcher": "^1.0.2",
+    "watchify": "^3.9.0"
   }
 }
