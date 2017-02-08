@@ -1,6 +1,6 @@
 # TinyGQL
 
-A tiny GraphQL browser client library with zero dependencies. 
+A tiny GraphQL browser client library with zero dependencies.
 
 Feb 4, 2016: At the time of this writing, the minified library's file size is 1.88 kb.
 
@@ -35,7 +35,7 @@ You can also download the latest version of TinyGQL by right-clicking and saving
 - [Minified version](https://unpkg.com/tinygql/umd/tinygql.min.js)
 - [Non-minified version](https://unpkg.com/tinygql/umd/tinygql.min.js)
 
-It's also possible to ask load a specific version of TinyGQL. Visit [unpkg](https://unpkg.com/) to learn more.
+It's also possible to load a specific version of TinyGQL. Visit [unpkg](https://unpkg.com/) to learn more.
 
 ```html
 <!-- Examples: -->
@@ -103,7 +103,7 @@ gql.send(getListRequest, (err, data) => {
 });
 ```
 
-## Why Not Return Promises
+## Why Not Return Promises?
 
 I definitely encourage you to use Promises! But I wanted this library to be minimal and not require any external dependency, and unfortunately not all browsers support Promises natively at this moment (but we're almost [there](http://caniuse.com/#feat=promises)). For now, this library makes use of Node-style callbacks.
 
