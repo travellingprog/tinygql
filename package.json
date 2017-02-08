@@ -28,6 +28,8 @@
   "license": "MIT",
   "devDependencies": {
     "browserify": "^14.0.0",
+    "browserify-istanbul": "^2.0.0",
+    "istanbul": "^0.4.5",
     "jasmine-core": "^2.5.2",
     "karma": "^1.4.1",
     "karma-browserify": "^5.1.1",

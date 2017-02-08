@@ -1,4 +1,5 @@
 const karma = require('karma');
+const istanbul = require('browserify-istanbul');
 
 const PORT = 9876;
 
@@ -17,7 +18,7 @@ const config = {
     captureConsole: true,
   },
   preprocessors: {
-    'tests/**/*.js': ['browserify', 'coverage'],
+    'tests/**/*.js': ['browserify'],
   },
   reporters: [
     'progress',
@@ -27,6 +28,13 @@ const config = {
   autoWatch: false,
   browserify: {
     debug: true,
+    browserField: false,  // don't grab the UMD build
+    transform: [
+      istanbul({
+        ignore: ['**/tests/**'],
+        defaultIgnore: false,
+      }),
+    ],
   },
   coverageReporter: {
     type: 'text',
@@ -42,10 +50,4 @@ const exitHandler = exitCode => {
 };
 
 const server = new karma.Server(config, exitHandler);
-
-server.on('coverage_complete', (browser, coverageReport) => {
-  console.log('Coverage report: ', coverageReport);
-});
-
 server.start();
-// karma.runner.run({port: PORT});
