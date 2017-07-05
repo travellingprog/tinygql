@@ -2,7 +2,7 @@
 
 A tiny GraphQL browser client library with zero dependencies.
 
-Feb 4, 2016: At the time of this writing, the minified library's file size is 1.88 kb.
+Feb 4, 2017: At the time of this writing, the minified library's file size is 1.88 kb.
 
 Note that this library uses XMLHttpRequest, which is expected to be present in the browser environment.
 
